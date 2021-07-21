@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://www.wareplace.it/services/it/EgonWpcomSuite" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.wareplace.it/services/it/EgonWpcomSuite" xmlns:intf="http://www.wareplace.it/services/it/EgonWpcomSuite" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://www.wareplace.it/services/it/EgonWpcomSuite" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="wpNorm">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="PAR">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="RAGSOC" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RGSRIC" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARIVA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CODFIS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LIVFIS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DATNAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOCNAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DOCIDN" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="INDRES" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LIVENOR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ESTLPO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EMAIL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CNTTEL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CNTCOD" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXZLM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXCOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXMEM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXLST" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TIMSTP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXCND" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXPTF" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="INDCOO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COOATL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COONAV" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COODEF" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COOBES" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COOATT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COOIDQ" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COOAPP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZO91" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZO01" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZO11" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZAPP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZPUN" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BESPRI" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NUMAPP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXMSU" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FMTOUT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGOUT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXOUT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WPUSER" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WPPASW" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ELECLI">
+    <sequence>
+     <element name="CDPFON" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPCLI" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXCLI" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRPIND" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="PRXIND" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="KEY">
+    <sequence>
+     <element name="DSXKEY" nillable="true" type="xsd:string"/>
+     <element name="TPPKEY" nillable="true" type="xsd:unsignedInt"/>
+     <element name="VLPBON" nillable="true" type="xsd:unsignedInt"/>
+     <element name="SQPPAR" nillable="true" type="xsd:unsignedInt"/>
+    </sequence>
+   </complexType>
+   <complexType name="KII">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDPFAS" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="ELECLI" nillable="true" type="impl:ELECLI"/>
+     <element maxOccurs="1" minOccurs="0" name="ELECLIDOP" nillable="true" type="impl:ELECLI"/>
+     <element maxOccurs="1" minOccurs="0" name="NR9KEY" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="KEY" nillable="true" type="impl:KEY"/>
+    </sequence>
+   </complexType>
+   <complexType name="DSXPLC">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DSXCNY" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSTA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXREG" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXDPT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCNL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXDS1" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXDS2" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXDS3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="LOCNAS">
+    <sequence>
+     <element name="DSXPLCNAS" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXZIPNAS" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DOCIDN">
+    <sequence>
+     <element name="DSXDATRIL" type="xsd:string"/>
+     <element name="DSXDATNAS" type="xsd:string"/>
+     <element name="DSXDATSCA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPRORIL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCOMRIL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXDOC" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXDOC" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXENTRIL" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="RGS_010">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXANA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSEX" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXFRENAM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXMIDNAM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXNOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXTITACC" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPRENOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DATNAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXCDK" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOCNAS" nillable="true" type="impl:LOCNAS"/>
+     <element maxOccurs="1" minOccurs="0" name="DOCIDN" nillable="true" type="impl:DOCIDN"/>
+    </sequence>
+   </complexType>
+   <complexType name="ELECOD">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element name="TPXCOD" nillable="true" type="xsd:string"/>
+     <element name="DSXCOD" nillable="true" type="xsd:string"/>
+     <element name="TPXRNK" nillable="true" type="xsd:string"/>
+     <element name="TPXCHK" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="COD_011">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="impl:ELECOD"/>
+    </sequence>
+   </complexType>
+   <complexType name="CDPPLC">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDPCNY" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPSTA" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPREG" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPDPT" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPCNL" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPDS1" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPDS2" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPDS3" nillable="true" type="xsd:unsignedLong"/>
+    </sequence>
+   </complexType>
+   <complexType name="DSXSTRINP">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DSXDUG" nillable="true" type="xsd:string"/>
+     <element name="DSXVIA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NRPNUMCIV" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXESP" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INR_020">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="TP9IND" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="TP9INDSOT" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXCDK" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXTED" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPLNG" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="TPPOBJ" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPOBJ" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPCIV" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPPLC" nillable="true" type="impl:CDPPLC"/>
+     <element name="DSXPLC" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXZIP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXST1" nillable="true" type="impl:DSXSTRINP"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXST2" nillable="true" type="impl:DSXSTRINP"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPREINR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXBLD" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSUBBLD" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCPNINR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ELETEL">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXTEL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="USOTEL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PFXOPR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PFXINT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PFXNAZ" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NR9TEL" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="TELUNI">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDXISOUNI" nillable="true" type="xsd:string"/>
+     <element name="TELUNI" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="TEL_035">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="ELETEL" nillable="true" type="impl:ELETEL"/>
+     <element maxOccurs="1" minOccurs="0" name="TELUNI" nillable="true" type="impl:TELUNI"/>
+    </sequence>
+   </complexType>
+   <complexType name="CLIDOP">
+    <sequence>
+     <element name="ELECLIDOP" nillable="true" type="impl:ELECLI"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPSOTFAS" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="VL9PES" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="FILLERDOP" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="KIO">
+    <sequence>
+     <element name="FLXDOP" nillable="true" type="xsd:string"/>
+     <element name="ELECLI" nillable="true" type="impl:ELECLI"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSTA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSCN" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NUMDOP" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="CLIDOP" nillable="true" type="impl:CLIDOP"/>
+    </sequence>
+   </complexType>
+   <complexType name="ALTRO_610">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DSXMRENAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXZIPNAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPRENOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXMATCOD" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="RGS_610">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TPXANA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSEX" nillable="true" type="xsd:string"/>
+     <element name="DSXFRENAM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCOG" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXMIDNAM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXNOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSUFNAM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXTITACC" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPTITACC" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXTITAC2" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPTITAC2" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXFRENAMABB" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXNOMABB" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXGIUUFF" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXGIUABB" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPSPEGIU" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="DATNAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPLCNAS" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPPLCNAS" nillable="true" type="impl:CDPPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="ALTRO" nillable="true" type="impl:ALTRO_610"/>
+    </sequence>
+   </complexType>
+   <complexType name="ELECODOUT">
+    <sequence>
+     <element name="ELECOD" nillable="true" type="impl:ELECOD"/>
+     <element name="VLPBON" nillable="true" type="xsd:unsignedInt"/>
+    </sequence>
+   </complexType>
+   <complexType name="COD_611">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="impl:ELECODOUT"/>
+    </sequence>
+   </complexType>
+   <complexType name="CDXPLC">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDXCNY" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXSTA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXREG" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXDPT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXCNL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXDS1" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXDS2" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXDS3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="FLXOBJ">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="FLXCNY" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSTA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXREG" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXDPT" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXCNL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXDS1" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXDS2" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXDS3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="LNGCDP">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="TPPLNG" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPLNG" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="NRPPRG" nillable="true" type="xsd:unsignedShort"/>
+    </sequence>
+   </complexType>
+   <complexType name="MRE">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="TPPOBJMRE" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPOBJMRE" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGMRE" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXUFFMRE" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXUSRMRE" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXABBMRE" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSIGMRE" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="STROUTELE">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DSXSTR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXDUG" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXVIA" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DSXSTROUT">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DSXADD" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXST1" nillable="true" type="impl:STROUTELE"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXST2" nillable="true" type="impl:STROUTELE"/>
+    </sequence>
+   </complexType>
+   <complexType name="CDPSTR">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDPSTR" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPDUG" nillable="true" type="xsd:unsignedInt"/>
+    </sequence>
+   </complexType>
+   <complexType name="CDXSTR">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDX" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="FLXSTR">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="FLX" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="CIVICO">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDPCIV" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="NRPNUMCIV" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="NRXNUMCIV" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXESP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCOM" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ALTRO_620">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DSXCASPOS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPREINR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCPNINR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXEXTURB" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXMATCOD" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DSXCND">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="DPTCND" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CNLCND" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DS1CND" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STRCND" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZIPCND" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INRCND">
+    <sequence>
+     <element name="TPPCND" nillable="true" type="xsd:unsignedShort"/>
+     <element name="CDPCND" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXCND" nillable="true" type="impl:DSXCND"/>
+     <element name="LNGCND" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPSOTFAS" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VL9PESASS" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="VL9PESREL" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="NR9PARPIU" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="NR9PARMEN" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXVERSEQ" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FILLERCND" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="INR_620">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="TP9IND" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="TP9INDSOT" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPLCUFF" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPLCUSR" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPLCABB" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPLCSIG" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPPLCOBJ" nillable="true" type="impl:CDPPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXPLCOBJ" nillable="true" type="impl:CDXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXSTAPLCOBJ" type="impl:CDXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXPLCOBJ" nillable="true" type="impl:FLXOBJ"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCCNY" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCSTA" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCREG" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCDPT" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCCNL" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCDS1" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCDS2" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGPLCDS3" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="MRE" nillable="true" type="impl:MRE"/>
+     <element maxOccurs="1" minOccurs="0" name="TPPOBJPLC" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="TPPOBJSTR" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXZIP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXUNIROW" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSTRUFF" nillable="true" type="impl:DSXSTROUT"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSTRUSR" nillable="true" type="impl:DSXSTROUT"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSTRABB" nillable="true" type="impl:DSXSTROUT"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPSTRST1" nillable="true" type="impl:CDPSTR"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPSTRST2" nillable="true" type="impl:CDPSTR"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXSTRST1" nillable="true" type="impl:CDXSTR"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXSTRST2" nillable="true" type="impl:CDXSTR"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSTRST1" nillable="true" type="impl:FLXSTR"/>
+     <element maxOccurs="1" minOccurs="0" name="FLXSTRST2" nillable="true" type="impl:FLXSTR"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGSTRST1" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGSTRST2" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="CIVICOST1" nillable="true" type="impl:CIVICO"/>
+     <element maxOccurs="1" minOccurs="0" name="CIVICOST2" nillable="true" type="impl:CIVICO"/>
+     <element maxOccurs="1" minOccurs="0" name="ALTRO" nillable="true" type="impl:ALTRO_620"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXBLD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSUBBLD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPREDIR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXPSTDIR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXSTACIV1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CDXSTACIV2" type="xsd:string"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="CDXSTA" nillable="true" type="impl:ELECOD"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXLPOUFF" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXLPOUSR" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXLPOABB" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXLPOSIG" nillable="true" type="impl:DSXPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="CDPLPOOBJ" nillable="true" type="impl:CDPPLC"/>
+     <element maxOccurs="1" minOccurs="0" name="LNGLPO" nillable="true" type="impl:LNGCDP"/>
+     <element maxOccurs="1" minOccurs="0" name="TPPOBJLPO" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="NR9CND" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="INRCND" nillable="true" type="impl:INRCND"/>
+    </sequence>
+   </complexType>
+   <complexType name="COO_626">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDPOBJSTR" nillable="true" type="xsd:unsignedLong"/>
+     <element name="DSXNUMCIV_1" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXEXPCIV_1" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ATL_1_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ATL_1_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ATL_1_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ATL_1_Y_G" nillable="true" type="xsd:string"/>
+     <element name="DSXNUMCIV_2" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXEXPCIV_2" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NAV_2_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NAV_2_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NAV_2_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NAV_2_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_TPXGEO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_FLXCNL" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_FLXDS1" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_FLXZIP" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_1_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_1_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_1_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_1_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_3_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_3_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_3_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_3_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_2_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_2_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_2_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_2_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BES_1_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BES_1_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BES_1_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BES_1_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BES_VLXBES" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ATT_VLXATT" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="MCZ_627">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="CDPOBJSTR" nillable="true" type="xsd:unsignedLong"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_TPXGEO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_DSXARCIDX" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_DSXINF" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_ISTPRO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_ISTCOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_ISTSEZ" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_1_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_DSXARCIDX" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_DSXINF" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_ISTPRO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_ISTCOM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_ISTSEZ" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_X_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_Y_M" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_X_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_2_Y_G" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HOME_ZONE" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GU3" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="TEL_635">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="NRZELE" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="ELETEL" nillable="true" type="impl:ELETEL"/>
+     <element maxOccurs="1" minOccurs="0" name="NOTE" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="PTF">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="ROW1" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROW2" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROW3" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROW4" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROW5" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROW6" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROW7" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="SEZ_ERR">
+    <sequence>
+     <element name="FLXSEG" nillable="true" type="xsd:string"/>
+     <element name="CDPSEG" nillable="true" type="xsd:unsignedShort"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXSEG" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="ERR_620_ELE">
+    <sequence>
+     <element name="ERR_620_S" nillable="true" type="xsd:string"/>
+     <element maxOccurs="unbounded" name="ERR_620" nillable="true" type="impl:SEZ_ERR"/>
+    </sequence>
+   </complexType>
+   <complexType name="SEG">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="ERR_KIO_ELE" nillable="true" type="impl:SEZ_ERR"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="ERR_610_ELE" nillable="true" type="impl:SEZ_ERR"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="ERR_611_ELE" nillable="true" type="impl:SEZ_ERR"/>
+     <element maxOccurs="1" minOccurs="0" name="ERR_620_ELE" nillable="true" type="impl:ERR_620_ELE"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="ERR_GEO_ELE" nillable="true" type="impl:SEZ_ERR"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="ERR_635_ELE" nillable="true" type="impl:SEZ_ERR"/>
+     <element maxOccurs="1" minOccurs="0" name="ERR_PTF_ELE" nillable="true" type="impl:SEZ_ERR"/>
+    </sequence>
+   </complexType>
+   <complexType name="SOG">
+    <sequence>
+     <element name="PAR" nillable="true" type="impl:PAR"/>
+     <element maxOccurs="1" minOccurs="0" name="KII" nillable="true" type="impl:KII"/>
+     <element maxOccurs="1" minOccurs="0" name="RGS_010" nillable="true" type="impl:RGS_010"/>
+     <element maxOccurs="1" minOccurs="0" name="COD_011" nillable="true" type="impl:COD_011"/>
+     <element maxOccurs="1" minOccurs="0" name="INR_020" nillable="true" type="impl:INR_020"/>
+     <element maxOccurs="1" minOccurs="0" name="TEL_035" nillable="true" type="impl:TEL_035"/>
+     <element maxOccurs="1" minOccurs="0" name="KIO" nillable="true" type="impl:KIO"/>
+     <element maxOccurs="1" minOccurs="0" name="RGS_610" nillable="true" type="impl:RGS_610"/>
+     <element maxOccurs="1" minOccurs="0" name="COD_611" nillable="true" type="impl:COD_611"/>
+     <element maxOccurs="1" minOccurs="0" name="INR_620" nillable="true" type="impl:INR_620"/>
+     <element maxOccurs="1" minOccurs="0" name="COO_626" nillable="true" type="impl:COO_626"/>
+     <element maxOccurs="1" minOccurs="0" name="MCZ_627" nillable="true" type="impl:MCZ_627"/>
+     <element maxOccurs="1" minOccurs="0" name="TEL_635" nillable="true" type="impl:TEL_635"/>
+     <element maxOccurs="1" minOccurs="0" name="PTF" nillable="true" type="impl:PTF"/>
+     <element maxOccurs="1" minOccurs="0" name="SEG" nillable="true" type="impl:SEG"/>
+    </sequence>
+   </complexType>
+   <complexType name="ERR">
+    <sequence>
+     <element name="WP9STC" nillable="true" type="xsd:unsignedInt"/>
+     <element maxOccurs="1" minOccurs="0" name="DSXERR" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="WPFGO">
+    <sequence>
+     <element maxOccurs="unbounded" name="SOG" type="impl:SOG"/>
+     <element maxOccurs="1" minOccurs="0" name="ERR" nillable="true" type="impl:ERR"/>
+    </sequence>
+   </complexType>
+   <element name="wpNormResponse">
+    <complexType>
+     <sequence>
+      <element name="wpNormResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpDed">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpDedResponse">
+    <complexType>
+     <sequence>
+      <element name="wpDedResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpInsKey">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpInsKeyResponse">
+    <complexType>
+     <sequence>
+      <element name="wpInsKeyResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpCanKey">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpCanKeyResponse">
+    <complexType>
+     <sequence>
+      <element name="wpCanKeyResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpCanSog">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpCanSogResponse">
+    <complexType>
+     <sequence>
+      <element name="wpCanSogResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpModFon">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpModFonResponse">
+    <complexType>
+     <sequence>
+      <element name="wpModFonResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpRicSog">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpRicSogResponse">
+    <complexType>
+     <sequence>
+      <element name="wpRicSogResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpModSog">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpModSogResponse">
+    <complexType>
+     <sequence>
+      <element name="wpModSogResult" type="impl:WPFGO"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpNormDrt">
+    <complexType>
+     <sequence>
+      <element name="parametro" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="wpNormDrtResponse">
+    <complexType>
+     <sequence>
+      <element name="wpNormResult" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="wpDedResponse">
+
+      <wsdl:part element="impl:wpDedResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpModFonResponse">
+
+      <wsdl:part element="impl:wpModFonResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpModSogResponse">
+
+      <wsdl:part element="impl:wpModSogResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpNormResponse">
+
+      <wsdl:part element="impl:wpNormResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpNormDrtRequest">
+
+      <wsdl:part element="impl:wpNormDrt" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpInsKeyRequest">
+
+      <wsdl:part element="impl:wpInsKey" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpDedRequest">
+
+      <wsdl:part element="impl:wpDed" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpModSogRequest">
+
+      <wsdl:part element="impl:wpModSog" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpModFonRequest">
+
+      <wsdl:part element="impl:wpModFon" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpRicSogResponse">
+
+      <wsdl:part element="impl:wpRicSogResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpInsKeyResponse">
+
+      <wsdl:part element="impl:wpInsKeyResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpNormRequest">
+
+      <wsdl:part element="impl:wpNorm" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpNormDrtResponse">
+
+      <wsdl:part element="impl:wpNormDrtResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpCanKeyResponse">
+
+      <wsdl:part element="impl:wpCanKeyResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpCanSogResponse">
+
+      <wsdl:part element="impl:wpCanSogResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpRicSogRequest">
+
+      <wsdl:part element="impl:wpRicSog" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpCanSogRequest">
+
+      <wsdl:part element="impl:wpCanSog" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="wpCanKeyRequest">
+
+      <wsdl:part element="impl:wpCanKey" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="EgonWpcomSuitePort">
+
+      <wsdl:operation name="wpNorm">
+
+         <wsdl:input message="impl:wpNormRequest" name="wpNormRequest"/>
+
+         <wsdl:output message="impl:wpNormResponse" name="wpNormResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpDed">
+
+         <wsdl:input message="impl:wpDedRequest" name="wpDedRequest"/>
+
+         <wsdl:output message="impl:wpDedResponse" name="wpDedResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpInsKey">
+
+         <wsdl:input message="impl:wpInsKeyRequest" name="wpInsKeyRequest"/>
+
+         <wsdl:output message="impl:wpInsKeyResponse" name="wpInsKeyResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpCanKey">
+
+         <wsdl:input message="impl:wpCanKeyRequest" name="wpCanKeyRequest"/>
+
+         <wsdl:output message="impl:wpCanKeyResponse" name="wpCanKeyResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpCanSog">
+
+         <wsdl:input message="impl:wpCanSogRequest" name="wpCanSogRequest"/>
+
+         <wsdl:output message="impl:wpCanSogResponse" name="wpCanSogResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpModFon">
+
+         <wsdl:input message="impl:wpModFonRequest" name="wpModFonRequest"/>
+
+         <wsdl:output message="impl:wpModFonResponse" name="wpModFonResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpRicSog">
+
+         <wsdl:input message="impl:wpRicSogRequest" name="wpRicSogRequest"/>
+
+         <wsdl:output message="impl:wpRicSogResponse" name="wpRicSogResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpModSog">
+
+         <wsdl:input message="impl:wpModSogRequest" name="wpModSogRequest"/>
+
+         <wsdl:output message="impl:wpModSogResponse" name="wpModSogResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpNormDrt">
+
+         <wsdl:input message="impl:wpNormDrtRequest" name="wpNormDrtRequest"/>
+
+         <wsdl:output message="impl:wpNormDrtResponse" name="wpNormDrtResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="EgonWpcomSuiteSoapBinding" type="impl:EgonWpcomSuitePort">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="wpNorm">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpNorm"/>
+
+         <wsdl:input name="wpNormRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpNormResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpDed">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpDed"/>
+
+         <wsdl:input name="wpDedRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpDedResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpInsKey">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpInsKey"/>
+
+         <wsdl:input name="wpInsKeyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpInsKeyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpCanKey">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpCanKey"/>
+
+         <wsdl:input name="wpCanKeyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpCanKeyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpCanSog">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpCanSog"/>
+
+         <wsdl:input name="wpCanSogRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpCanSogResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpModFon">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpModFon"/>
+
+         <wsdl:input name="wpModFonRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpModFonResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpRicSog">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpRicSog"/>
+
+         <wsdl:input name="wpRicSogRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpRicSogResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpModSog">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpModSog"/>
+
+         <wsdl:input name="wpModSogRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpModSogResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="wpNormDrt">
+
+         <wsdlsoap:operation soapAction="http://www.wareplace.it/services/it/EgonWpcomSuite/wpNormDrt"/>
+
+         <wsdl:input name="wpNormDrtRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="wpNormDrtResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="EgonWpcomSuiteService">
+
+      <wsdl:port binding="impl:EgonWpcomSuiteSoapBinding" name="EgonWpcomSuite">
+
+         <wsdlsoap:address location="http://wvttom-gsdx-001.net.local:8080/Egon_AGR/services/EgonWpcomSuite"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

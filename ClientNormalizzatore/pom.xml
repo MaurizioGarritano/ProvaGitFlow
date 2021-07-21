@@ -4,7 +4,7 @@
 	<groupId>it.ader.lar</groupId>
 	<artifactId>warePlaceWSClient</artifactId>
 	<version>2.0.0</version>
-	
+	<!-- prova -->
 	<repositories>
 		<repository>
 			<id>it.prova</id>
